@@ -1,0 +1,3 @@
+CREATE USER IF NOT EXISTS 'mgs_user'@'%' IDENTIFIED BY 'pa55word';
+GRANT SELECT, INSERT, UPDATE, DELETE ON my_guitar_shop.* TO 'mgs_user'@'%';
+FLUSH PRIVILEGES;

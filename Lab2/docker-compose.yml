@@ -1,0 +1,11 @@
+services:
+  web:
+    image: php:8.2-apache
+    container_name: labs_2_6_web
+    restart: unless-stopped
+    ports:
+      - "8083:80"
+    volumes:
+      - ./web/src:/var/www/html
+    environment:
+      PHP_DISPLAY_ERRORS: "1"
